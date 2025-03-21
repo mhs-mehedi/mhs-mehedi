@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="image">
+            <div class="mehedi">
+                <img src="assets/me.jpg" alt="">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mhs.sourov2000" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter Icon -->
+                    <a href="https://x.com/MdMehediHa46917" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Whatsapp Icon -->
+                    <a href="https://wa.me/+8801774490826" target="_blank" title="Instagram">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/md-mehedi-hasan-508ab8265/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="skill-container">
+                <!-- Graphics Design -->
+                <div class="skill">
+                    <div class="skill-name">Graphics Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill">
+                    <div class="skill-name">Web Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                </div>
+
+                <!-- MS Office -->
+                <div class="skill">
+                    <div class="skill-name">MS Office</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="contact_icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="hire">
+                    <i class="fa-solid fa-briefcase"></i> Hire Me
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index_resume.html">Home</a></li>
+                    <li><a href="resume_subtopic.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu" onclick="toggleLeftSidebar()">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    Menu
+                </button>
+                <div class="icon" onclick="toggleSidebar()">
+                    <svg class="vertical-dots" viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="20" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                    </svg>
+                </div>
+
+                <!-- Left Sidebar -->
+                <div class="left-sidebar" id="left-sidebar">
+                    <div class="left_sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="left-close-btn" onclick="toggleLeftSidebar()">&times;</span>
+                    </div>
+                    <ul>
+                        <li><a href="index_resume.html">Home</a></li>
+                        <li><a href="resume_subtopic.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Left Overlay -->
+                <div class="left-overlay" id="left-overlay" onclick="toggleLeftSidebar()"></div>
+
+                <!--Right Sidebar -->
+                <div class="sidebar" id="sidebar" data-searchable="">
+                    <div class="sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="search-box">
+                        <form id="searchForm">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <i id="searchIcon" class="fa-solid fa-search"></i>
+                        </form>
+                    </div>
+                    Categories
+                    <!-- Sidebar Topics -->
+                    <ul>
+                        <li>Web</li>
+                        <li>Startup</li>
+                        <li>Branding</li>
+                        <li>UI/UX</li>
+                        <li>Agency</li>
+                    </ul>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+            </div>
+
+
+            <div class="body">
+                    <h1 class="contact-heading"><img src="assets/contact-us.png" width="300px" alt="" srcset=""></h1>
+                    <div class="contact-container">
+                        <!-- Left Column: Contact Form -->
+                        <div class="contact-form">
+                            <form method="POST" action="https://formspree.io/f/mjkyyybn">
+                                <!-- Row 1: Full Name and Email -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="full-name">Full Name*</label>
+                                        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email*</label>
+                                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                                    </div>
+                                </div>
+                
+                                <!-- Row 2: Phone and Subject -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="subject">Subject*</label>
+                                        <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                                    </div>
+                                </div>
+                
+                                <!-- Row 3: Message -->
+                                <div class="form-row">
+                                    <div class="form-group full-width">
+                                        <label for="message">Message*</label>
+                                        <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                
+                                <!-- Send Message Button -->
+                                <button type="submit" class="send-message-btn">Send Message</button>
+                            </form>
+                        </div>
+                
+                        <!-- Right Column: Contact Information -->
+                        <div class="faq-section">
+                            <h3>Frequently Asked Questions</h3>
+                            
+                            <!-- FAQ 1 -->
+                            <details class="faq-item">
+                                <summary class="faq-question">How do I get started?</summary>
+                                <p class="faq-answer">Simply fill out the contact form, and I'll get back to you within 24 hours.</p>
+                            </details>
+                        
+                            <!-- FAQ 2 -->
+                            <details class="faq-item">
+                                <summary class="faq-question">What services do you offer?</summary>
+                                <p class="faq-answer">I specialize in web development, UI/UX design, and digital marketing.</p>
+                            </details>
+                        
+                            <!-- FAQ 3 -->
+                            <details class="faq-item">
+                                <summary class="faq-question">Do you work remotely?</summary>
+                                <p class="faq-answer">Yes, I work remotely and collaborate with clients worldwide.</p>
+                            </details>
+                        
+                            <!-- FAQ 4 -->
+                            <details class="faq-item">
+                                <summary class="faq-question">What are your rates?</summary>
+                                <p class="faq-answer">Rates vary depending on the project scope. Contact me for a detailed quote.</p>
+                            </details>
+                        
+                            <!-- FAQ 5 -->
+                            <details class="faq-item">
+                                <summary class="faq-question">How long does a project take?</summary>
+                                <p class="faq-answer">Project timelines depend on complexity, but I always aim to deliver on time and with quality.</p>
+                            </details>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2025 Mhs. All Rights Reserved.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+            document.getElementById("overlay").classList.toggle("active");
+        }
+        function toggleLeftSidebar() {
+            document.getElementById("left-sidebar").classList.toggle("active");
+            document.getElementById("left-overlay").classList.toggle("active");
+        }
+
+
+    
+
+        // Global Search Functionality
+        const searchInput = document.getElementById("searchInput");
+        const searchIcon = document.getElementById("searchIcon");
+        const searchForm = document.getElementById("searchForm");
+
+        // Function to perform search
+        function performSearch() {
+            const searchQuery = searchInput.value.trim().toLowerCase(); // Get the search query in lowercase
+
+            // Clear previous highlights
+            const searchableElements = document.querySelectorAll("[data-searchable]");
+            searchableElements.forEach((element) => {
+                element.querySelectorAll(".highlight").forEach((highlight) => {
+                    highlight.outerHTML = highlight.innerHTML; // Remove highlight spans
+                });
+            });
+
+            if (searchQuery === "") return; // Exit if the search query is empty
+
+            // Search for the keyword in all searchable elements
+            let firstMatch = null;
+            searchableElements.forEach((element) => {
+                const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+                let hasMatch = false;
+
+                while (walker.nextNode()) {
+                    const node = walker.currentNode;
+                    const parent = node.parentElement;
+
+                    if (parent.tagName === "SCRIPT" || parent.tagName === "STYLE") continue; // Skip script and style tags
+
+                    const content = node.textContent;
+                    const regex = new RegExp(`(${searchQuery})`, "gi"); // Case-insensitive global search
+
+                    if (regex.test(content)) {
+                        hasMatch = true;
+                        const highlightedContent = content.replace(regex, '<span class="highlight">$1</span>');
+                        const span = document.createElement("span");
+                        span.innerHTML = highlightedContent;
+                        node.replaceWith(span); // Replace text node with highlighted content
+                    }
+                }
+
+                // Scroll to the first match
+                if (!firstMatch && hasMatch) {
+                    firstMatch = element;
+                    firstMatch.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        }
+
+        // Trigger search on input
+        searchInput.addEventListener("input", performSearch);
+
+        // Trigger search on icon click
+        searchIcon.addEventListener("click", performSearch);
+
+        // Prevent form submission
+        searchForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+            performSearch(); // Perform the search
+        });
+
+    </script>
+</body>
+
+</html>

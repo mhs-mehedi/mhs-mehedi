@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="image">
+            <div class="mehedi">
+                <img src="assets/me.jpg" alt="">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mhs.sourov2000" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter Icon -->
+                    <a href="https://x.com/MdMehediHa46917" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Whatsapp Icon -->
+                    <a href="https://wa.me/+8801774490826" target="_blank" title="Instagram">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/md-mehedi-hasan-508ab8265/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="skill-container">
+                <!-- Graphics Design -->
+                <div class="skill">
+                    <div class="skill-name">Graphics Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill">
+                    <div class="skill-name">Web Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                </div>
+
+                <!-- MS Office -->
+                <div class="skill">
+                    <div class="skill-name">MS Office</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="contact_icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="hire">
+                    <i class="fa-solid fa-briefcase"></i> Hire Me
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index_resume.html">Home</a></li>
+                    <li><a href="resume_subtopic.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu" onclick="toggleLeftSidebar()">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    Menu
+                </button>
+                <div class="icon" onclick="toggleSidebar()">
+                    <svg class="vertical-dots" viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="20" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                    </svg>
+                </div>
+
+                <!-- Left Sidebar -->
+                <div class="left-sidebar" id="left-sidebar">
+                    <div class="left_sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="left-close-btn" onclick="toggleLeftSidebar()">&times;</span>
+                    </div>
+                    <ul>
+                        <li><a href="index_resume.html">Home</a></li>
+                        <li><a href="resume_subtopic.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Left Overlay -->
+                <div class="left-overlay" id="left-overlay" onclick="toggleLeftSidebar()"></div>
+
+                <!--Right Sidebar -->
+                <div class="sidebar" id="sidebar" data-searchable="">
+                    <div class="sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="search-box">
+                        <form id="searchForm">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <i id="searchIcon" class="fa-solid fa-search"></i>
+                        </form>
+                    </div>
+                    Categories
+                    <!-- Sidebar Topics -->
+                    <ul>
+                        <li>Web</li>
+                        <li>Startup</li>
+                        <li>Branding</li>
+                        <li>UI/UX</li>
+                        <li>Agency</li>
+                    </ul>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+            </div>
+
+
+            <div class="body">
+                <p>
+                    Latest Projects..(Will Add Later)
+                </p>
+                <div class="portfolio-grid">
+                    <!-- Portfolio Item 1: Web Development -->
+                    <div class="portfolio-item" data-category="web-development">
+                        <img src="assets/web-dev.jpeg" alt="Web Development">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>Web Development</h3>
+                            <p>Click to view my web projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2: Graphics Design -->
+                    <div class="portfolio-item" data-category="graphics-design">
+                        <img src="assets/graphics-design.jpeg" alt="Graphics Design">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>Graphics Design</h3>
+                            <p>Click to view my design works.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3: UI/UX Design -->
+                    <div class="portfolio-item" data-category="ui-ux">
+                        <img src="assets/ui-ux.jpeg" alt="UI/UX Design">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>UI/UX Design</h3>
+                            <p>Click to view my UI/UX projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 4: Branding -->
+                    <div class="portfolio-item" data-category="branding">
+                        <img src="assets/branding.jpeg" alt="Branding">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>Branding</h3>
+                            <p>Click to view my branding projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 5: Mobile Apps -->
+                    <div class="portfolio-item" data-category="mobile-apps">
+                        <img src="assets/mobile-apps.jpeg" alt="Mobile Apps">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>Mobile Apps</h3>
+                            <p>Click to view my mobile app projects.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 6: Photography -->
+                    <div class="portfolio-item" data-category="photography">
+                        <img src="assets/photography.jpeg" alt="Photography">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>Photography</h3>
+                            <p>Click to view my photography works.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 7: Video Editing -->
+                    <div class="portfolio-item" data-category="video-editing">
+                        <img src="assets/video-editing.jpeg" alt="Video Editing">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>Video Editing</h3>
+                            <p>Click to view my video editing works.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 8: Content Writing -->
+                    <div class="portfolio-item" data-category="content-writing">
+                        <img src="assets/content-writing.jpeg" alt="Content Writing">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>Content Writing</h3>
+                            <p>Click to view my writing samples.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 9: SEO -->
+                    <div class="portfolio-item" data-category="seo">
+                        <img src="assets/seo.jpeg" alt="SEO">
+                        <div class="work-name">Web Development</div>
+                        <div class="overlay">
+                            <h3>SEO</h3>
+                            <p>Click to view my SEO projects.</p>
+                        </div>
+                    </div>
+                    <!-- Detailed Section for Each Category -->
+                    <div class="portfolio-details" id="portfolio-details">
+                        <!-- Overlay -->
+                        <div class="details-overlay" onclick="closeDetails()"></div>
+
+                        <!-- Will be dynamically loaded -->
+                        <div class="details-content" id="details-content">
+
+                        </div>
+
+                        <!-- Close Button -->
+                        <button class="close-details" onclick="closeDetails()">&times;</button>
+                    </div>
+
+
+
+                    <!-- Additional items for "Load More" -->
+                    <div class="portfolio-item hidden" data-category="web-development">
+                        <img src="assets/web-dev.jpeg" alt="Web Development">
+                        <div class="work-name">Web Development 2</div>
+                        <div class="overlay">
+                            <h3>Web Development 2</h3>
+                            <p>Click to view more web projects.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-category="graphics-design">
+                        <img src="assets/graphics-design.jpeg" alt="Graphics Design">
+                        <div class="work-name">Graphics Design 2</div>
+                        <div class="overlay">
+                            <h3>Graphics Design 2</h3>
+                            <p>Click to view more design works.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-category="ui-ux">
+                        <img src="assets/ui-ux.jpeg" alt="UI/UX Design">
+                        <div class="work-name">UI/UX Design 2</div>
+                        <div class="overlay">
+                            <h3>UI/UX Design 2</h3>
+                            <p>Click to view more UI/UX projects.</p>
+                        </div>
+                    </div>
+                    <!-- Add as many items as you want -->
+
+
+
+                    <!-- Additional items for "Load More" -->
+                    <div class="portfolio-item hidden" data-category="web-development">
+                        <img src="assets/web-dev.jpeg" alt="Web Development">
+                        <div class="work-name">Web Development 2</div>
+                        <div class="overlay">
+                            <h3>Web Development 2</h3>
+                            <p>Click to view more web projects.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-category="graphics-design">
+                        <img src="assets/graphics-design.jpeg" alt="Graphics Design">
+                        <div class="work-name">Graphics Design 2</div>
+                        <div class="overlay">
+                            <h3>Graphics Design 2</h3>
+                            <p>Click to view more design works.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-category="ui-ux">
+                        <img src="assets/ui-ux.jpeg" alt="UI/UX Design">
+                        <div class="work-name">UI/UX Design 2</div>
+                        <div class="overlay">
+                            <h3>UI/UX Design 2</h3>
+                            <p>Click to view more UI/UX projects.</p>
+                        </div>
+                    </div>
+                    <!-- Add as many items as you want -->
+                </div>
+
+                <!-- Load More Button -->
+                <button id="load-more-btn" class="load-more-btn">
+                    <i class="fas fa-arrow-down"></i> Load More
+                </button>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2025 Mhs. All Rights Reserved.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+<script src="js/portfolio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+/* ------------------Less than 800px----------------- */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .image {
+        width: 90%;
+        max-width: 100%;
+        max-height: 750px; 
+        min-height: 1100px;
+    }
+
+
+    .container .image .mehedi img {
+        max-height: 350px; 
+        min-height: 760px;
+    }
+
+    .container .content {
+        width: 90%;
+        min-width: unset; 
+    }
+
+    .container .image .mehedi .social-icons {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 60%;
+        height: 8%;
+        /* margin: auto; */
+        margin-bottom: 20px;
+    }
+
+    .container .image .mehedi .social-icons a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 2.5em;
+        text-decoration: none;
+        color: #333;
+        transition: background-color 0.3s, color 0.3s;
+        margin: auto;
+        flex-shrink: 0;
+    }
+
+    .container .image .mehedi .social-icons i {
+        font-size: 20px;
+    }
+
+    .container .content .navbar .icon {
+        position: relative;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .container .content .navbar {
+        position: fixed;
+        top: 0;
+        width: 81%;
+        height: 12vh;
+        z-index: 1000;
+        margin: auto;
+    }
+
+    .container .content .navbar ul {
+        display: none;
+    }
+
+    .container {
+        padding-top: 150px;
+    }
+
+    .sidebar {
+        z-index: 2000;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .food-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-content p {
+        font-size: 14px;
+    }
+    .column {
+        width: 100%; 
+    }
+    .two-column{
+        flex-direction: column;
+    }
+
+    .info-box {
+        flex-direction: column; 
+    }
+
+    .box {
+        width: 95%; 
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .work-name {
+        font-size: 16px;
+    }
+    .load-more-btn {
+        width: 100%;
+        max-width: 300px;
+        font-size: 14px;
+    }
+}
+
+/* ------------------Less than 500px----------------- */
+@media (max-width: 500px) {
+    .container .content .navbar{
+        height: 10vh;
+    }
+    .container .content .navbar .menu{
+        font-size: 20px;
+    }
+    .container .content .navbar .menu .icon i{
+        font-size: 20px;
+    }
+    .container .content .navbar .menu .icon{
+        width: 60px;
+    }
+    .container .image{
+        max-height: 500px;
+    }
+    .container {
+        padding-top: 130px;
+    }
+    .about-me-item .label {
+        font-size: 16px;
+    }
+    .about-me-item .content {
+        font-size: 14px;
+    }
+    .about-me-item .label i {
+        font-size: 16px;
+    }
+    .bio-section p {
+        font-size: 14px;
+    }
+    .review-container {
+        height: 500px;
+    }
+    .review{
+        display: none;
+        flex-direction: column;
+    }
+    .review.active {
+        display: flex; 
+    }
+    .client-image{
+        width: 100%;
+        height: 180px;
+    }
+    .love-to-item{
+        flex-direction: column;
+    }
+    .game-photo{
+        width: 100%;
+    }
+    .about-me-grid{
+        grid-template-columns: 1fr;
+    }
+    .game-header{
+        justify-content: center;
+    }
+    .blog-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact-heading {
+        font-size: 28px; 
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+    }
+
+    .send-message-btn {
+        padding: 10px;
+        font-size: 14px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+/* ------------------ Greater than 800px --------------------*/
+@media (min-width: 800px) {
+    .image {
+        width: 90%;
+        max-width: 100%;
+        height: 100%;
+        /* border: 2px solid black; */
+    }
+
+    .container .content .navbar {
+        height: 10vh;
+        position: sticky;
+        top: 0; 
+        z-index: 1000; 
+    }
+
+    .container .content {
+        width: 90%;
+        min-width: 70%;
+    }
+
+
+}
+
+/* ------------------ Between 800 and 1100px --------------------*/
+@media (min-width: 800px) and (max-width: 1100px) {
+    .container .content .navbar {
+        height: 12vh;
+        position: sticky;
+        top: 0;
+        z-index: 1000; 
+    }
+
+    .container .content .navbar ul {
+        display: none;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container .content {
+        width: 90%;
+        min-width: auto;
+    }
+
+    .food-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* -------------------Greater than 1100px------------------------ */
+@media (min-width: 1100px) {
+    .container .content .navbar .menu {
+        display: none;
+    }
+
+    .container .content .navbar .icon {
+        width: 8vw;
+    }
+
+    .container .content .navbar {
+        height: 13vh;
+        position: sticky;
+        top: 0; 
+        z-index: 1000;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 columns for tablets */
+    }
+
+    .food-card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+@media (max-width: 1100px) {
+    .contact-container {
+        flex-direction: column; 
+    }
+
+    .form-row {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+
+    .info-item {
+        margin-bottom: 15px; 
+    }
+
+    .info-item i {
+        font-size: 20px; 
+    }
+
+    .info-item p {
+        font-size: 14px; 
+    }
+
+    .send-message-btn {
+        padding: 12px; 
+        font-size: 16px; 
+    }
+}

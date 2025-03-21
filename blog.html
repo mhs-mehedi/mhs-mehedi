@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="image">
+            <div class="mehedi">
+                <img src="assets/me.jpg" alt="">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mhs.sourov2000" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter Icon -->
+                    <a href="https://x.com/MdMehediHa46917" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Whatsapp Icon -->
+                    <a href="https://wa.me/+8801774490826" target="_blank" title="Instagram">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/md-mehedi-hasan-508ab8265/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="skill-container">
+                <!-- Graphics Design -->
+                <div class="skill">
+                    <div class="skill-name">Graphics Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill">
+                    <div class="skill-name">Web Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                </div>
+
+                <!-- MS Office -->
+                <div class="skill">
+                    <div class="skill-name">MS Office</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="contact_icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="hire">
+                    <i class="fa-solid fa-briefcase"></i> Hire Me
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index_resume.html">Home</a></li>
+                    <li><a href="resume_subtopic.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu" onclick="toggleLeftSidebar()">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    Menu
+                </button>
+                <div class="icon" onclick="toggleSidebar()">
+                    <svg class="vertical-dots" viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="20" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                    </svg>
+                </div>
+
+                <!-- Left Sidebar -->
+                <div class="left-sidebar" id="left-sidebar">
+                    <div class="left_sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="left-close-btn" onclick="toggleLeftSidebar()">&times;</span>
+                    </div>
+                    <ul>
+                        <li><a href="index_resume.html">Home</a></li>
+                        <li><a href="resume_subtopic.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Left Overlay -->
+                <div class="left-overlay" id="left-overlay" onclick="toggleLeftSidebar()"></div>
+
+                <!--Right Sidebar -->
+                <div class="sidebar" id="sidebar" data-searchable="">
+                    <div class="sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="search-box">
+                        <form id="searchForm">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <i id="searchIcon" class="fa-solid fa-search"></i>
+                        </form>
+                    </div>
+                    Categories
+                    <!-- Sidebar Topics -->
+                    <ul>
+                        <li>Web</li>
+                        <li>Startup</li>
+                        <li>Branding</li>
+                        <li>UI/UX</li>
+                        <li>Agency</li>
+                    </ul>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+            </div>
+
+
+            <div class="body">
+                <!-- Blog Posts Grid -->
+                <div class="blog-grid">
+                    <!-- Blog Post 1 -->
+                    <div class="blog-post" data-page="1">
+                        <div class="blog-image">
+                            <img src="assets/webdev.jpeg" alt="Blog Post 1">
+                            <div class="blog-date">October 10, 2023</div>
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">The Ever-Evolving World of Web Development: Trends, Tools, and Tips
+                                for 2023</h2>
+                            <p class="blog-description">Web development is a dynamic and ever-changing field that
+                                continues to shape the way we interact with the digital world. From simple static
+                                websites to complex web applications, the journey of web development has been nothing
+                                short of revolutionary. As we...</p>
+                            <button class="read-more" data-post="1">Read More</button>
+                        </div>
+                    </div>
+
+                    <!-- Blog Post 2 -->
+                    <div class="blog-post" data-page="1">
+                        <div class="blog-image">
+                            <img src="assets/gd.jpeg" alt="Blog Post 2">
+                            <div class="blog-date">October 12, 2023</div>
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">The Art and Science of Graphics Design: Trends, Tools, and Tips for
+                                2023</h2>
+                            <p class="blog-description">Graphics design is a powerful blend of creativity and technology
+                                that shapes how we perceive and interact with the world. From branding and advertising
+                                to user interfaces and social media, graphics design plays a crucial role in
+                                communication and storytelling. As we...</p>
+                            <button class="read-more" data-post="2">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 3 -->
+                    <div class="blog-post" data-page="1">
+                        <div class="blog-image">
+                            <img src="assets/ai.jpeg" alt="Blog Post 2">
+                            <div class="blog-date">October 12, 2023</div>
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">The Future of Artificial Intelligence: Trends and Applications</h2>
+                            <p class="blog-description">Artificial Intelligence (AI) is no longer a futuristic
+                                concept—it’s here, and it’s transforming the way we live, work, and interact with the
+                                world. From self-driving cars to personalized recommendations, AI is reshaping
+                                industries and creating new opportunities. As we...</p>
+                            <button class="read-more" data-post="3">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 4 -->
+                    <div class="blog-post" data-page="1">
+                        <div class="blog-image">
+                            <img src="assets/blockchain.jpeg" alt="Blog Post 2">
+                            <div class="blog-date">October 12, 2023</div>
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">How Blockchain is Transforming Industries</h2>
+                            <p class="blog-description">Blockchain technology, once synonymous with cryptocurrencies
+                                like Bitcoin, has evolved into a transformative force across various industries. Its
+                                decentralized, secure, and transparent nature is revolutionizing how businesses operate,
+                                ensuring trust, efficiency, and innovation. From finance to healthcare, blockchain is reshaping traditional processes and creating new opportunities. In this blog,...</p>
+                            <button class="read-more" data-post="4">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 5 -->
+                    <div class="blog-post" data-page="2">
+                        <div class="blog-image">
+                            <img src="assets/learn-new-skill.jpeg">
+                            <div class="blog-date">October 12, 2023</div>
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">How to Learn a New Skill Quickly and Effectively</h2>
+                            <p class="blog-description">Learning a new skill is one of the most rewarding experiences,
+                                whether it’s for personal growth, career advancement, or simply exploring a new passion.
+                                However, the process can feel overwhelming without the right approach. The good news is that with the right strategies, you can learn any skill quickly and effectively. In this blog,...</p>
+                            <button class="read-more" data-post="5">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Blog Post 6 -->
+                    <div class="blog-post" data-page="2">
+                        <div class="blog-image">
+                            <img src="assets/sleep.jpeg">
+                            <div class="blog-date">October 12, 2023</div>
+                        </div>
+                        <div class="blog-content">
+                            <h2 class="blog-title">The Connection Between Sleep and Productivity</h2>
+                            <p class="blog-description">Sleep is often overlooked in our fast-paced, productivity-driven
+                                world. However, it plays a critical role in our ability to perform at our best. The
+                                connection between sleep and productivity is undeniable—quality sleep enhances focus,
+                                creativity, and decision-making, while sleep deprivation can lead to burnout and poor
+                                performance. In this blog,...</p>
+                            <button class="read-more" data-post="6">Read More</button>
+                        </div>
+                    </div>
+
+                    <!-- Repeat for other blog posts -->
+                </div>
+
+                <!-- Full Blog Details Section -->
+                <div class="blog-details-overlay" id="blog-details-overlay">
+                    <div class="blog-details">
+                        <span class="close-details">&times;</span>
+                        <div class="details-content">
+                            <img src="" alt="Blog Image" class="details-image">
+                            <div class="details-date"></div>
+                            <h2 class="details-title"></h2>
+                            <p class="details-description"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <a href="#" class="page-nav" id="prev-page">Prev</a>
+                    <a href="#" class="page-number active" data-page="1">1</a>
+                    <a href="#" class="page-number" data-page="2">2</a>
+                    <a href="#" class="page-number" data-page="3">3</a>
+                    <a href="#" class="page-number" data-page="4">4</a>
+                    <a href="#" class="page-nav" id="next-page">Next</a>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2025 Mhs. All Rights Reserved.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+   <script src="js/blog.js"></script>
+</body>
+
+</html>

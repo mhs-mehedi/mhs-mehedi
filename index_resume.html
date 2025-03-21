@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="image">
+            <div class="mehedi">
+                <img src="assets/me.jpg" alt="">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mhs.sourov2000" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter Icon -->
+                    <a href="https://x.com/MdMehediHa46917" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Whatsapp Icon -->
+                    <a href="https://wa.me/+8801774490826" target="_blank" title="Instagram">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/md-mehedi-hasan-508ab8265/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="skill-container">
+                <!-- Graphics Design -->
+                <div class="skill">
+                    <div class="skill-name">Graphics Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill">
+                    <div class="skill-name">Web Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                </div>
+
+                <!-- MS Office -->
+                <div class="skill">
+                    <div class="skill-name">MS Office</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="contact_icon">
+                    <a href="contact.html">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+                <div class="hire">
+                    <a href="contact.html">
+                        <i class="fa-solid fa-briefcase"></i>
+                        Hire Me
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index_resume.html">Home</a></li>
+                    <li><a href="resume_subtopic.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu" onclick="toggleLeftSidebar()">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    Menu
+                </button>
+                <div class="icon" onclick="toggleSidebar()">
+                    <svg class="vertical-dots" viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="20" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                    </svg>
+                </div>
+
+                <!-- Left Sidebar -->
+                <div class="left-sidebar" id="left-sidebar">
+                    <div class="left_sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="left-close-btn" onclick="toggleLeftSidebar()">&times;</span>
+                    </div>
+                    <ul>
+                        <li><a href="index_resume.html">Home</a></li>
+                        <li><a href="resume_subtopic.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Left Overlay -->
+                <div class="left-overlay" id="left-overlay" onclick="toggleLeftSidebar()"></div>
+
+                <!--Right Sidebar -->
+                <div class="sidebar" id="sidebar" data-searchable="">
+                    <div class="sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="search-box">
+                        <form id="searchForm">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <i id="searchIcon" class="fa-solid fa-search"></i>
+                        </form>
+                    </div>
+                    Categories
+                    <!-- Sidebar Topics -->
+                    <ul>
+                        <li>Web</li>
+                        <li>Startup</li>
+                        <li>Branding</li>
+                        <li>UI/UX</li>
+                        <li>Agency</li>
+                    </ul>
+
+                </div>
+
+                <!-- Overlay -->
+                <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+            </div>
+
+
+            <div class="body">
+                <div class="info" data-searchable>
+                    <h2>About Me</h2>
+                    <div class="about-me-grid" data-searchable>
+                        <!-- Left Column -->
+                        <div class="left-column">
+                            <div class="about-me-item">
+                                <div class="label"><i class="fas fa-user"></i>Name</div>
+                                <div class="content">Md Mehedi Hasan</div>
+                            </div>
+                            <div class="about-me-item">
+                                <div class="label"><i class="fas fa-envelope"></i>Email Address</div>
+                                <div class="content">
+                                    <a
+                                        href="mailto:mhs547061@gmail.com?subject=Contact%20from%20Your%20Portfolio&body=Hello%20Your%20Name,">
+                                        mhs547061@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="about-me-item">
+                                <div class="label"><i class="fas fa-map-marker-alt"></i>Address</div>
+                                <div class="content">Bhurungamari,Kurigram,Rangpur</div>
+                            </div>
+                        </div>
+                        <!-- Right Column -->
+                        <div class="right-column">
+                            <div class="about-me-item">
+                                <div class="label"><i class="fas fa-birthday-cake"></i>Age</div>
+                                <div class="content">25 Years</div>
+                            </div>
+                            <div class="about-me-item" data-searchable>
+                                <div class="label"> <i class="fas fa-phone"></i>Phone Number</div>
+                                <div class="content">+8801774490826</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bio Section -->
+                    <div class="bio-section" data-searchable>
+                        <h3>Short Bio</h3>
+                        <p>
+                            Hi, I'm Mehedi Hasan. I am a student of University of Rajshahi at the dept. of Information
+                            and Communication Engineering pursuing a bachelor degree under the B.Sc Engg. Program. I am
+                            passionate about higher studies and looking for the opportunity to be enrolled in a
+                            university in USA.
+                        </p>
+                    </div>
+
+
+                    <div class="separator"></div>
+
+
+                    <!-- What I Do Section -->
+                    <div class="what-i-do-section" data-searchable>
+                        <h2>What I Do?</h2>
+                        <div class="card-grid">
+                            <div class="card">
+                                <i class="fas fa-code"></i>
+                                <h3>Web Development</h3>
+                                <h4>From Scratch</h4>
+                                <p>I create responsive and user-friendly websites using modern technologies like
+                                    HTML,CSS, JavaScript, and React.</p>
+                            </div>
+
+                            <div class="card">
+                                <i class="fas fa-paint-brush"></i>
+                                <h3>Graphics Design</h3>
+                                <h4>Creative Solutions</h4>
+                                <p>I design visually appealing graphics, logos, and branding materials that align with
+                                    your business goals.</p>
+                            </div>
+
+                            <div class="card">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>Problem Solving</h3>
+                                <h4>Versatile Coder</h4>
+                                <p>Proficient in C, Java, Python, and C++, I develop efficient and scalable solutions to
+                                    solve complex problems and bring ideas to life.</p>
+                            </div>
+
+                            <div class="card">
+                                <i class="fas fa-database"></i>
+                                <h3>Database Management</h3>
+                                <h4>Efficient & Secure</h4>
+                                <p>I design and manage databases to ensure data integrity, security, and performance.
+                                </p>
+                            </div>
+
+                            <div class="card">
+                                <i class="fab fa-microsoft"></i>
+                                <h3>MS Office</h3>
+                                <h4>Smart Office Management</h4>
+                                <p>Proficient in creating professional documents, presentations, and spreadsheets to
+                                    streamline workflows and enhance productivity.</p>
+                            </div>
+
+                            <div class="card">
+                                <i class="fas fa-cogs"></i>
+                                <h3>System Integration</h3>
+                                <h4>Seamless Workflow</h4>
+                                <p>I integrate systems and applications to streamline workflows and improve efficiency.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <!-- What They Say Section -->
+                    <div class="what-they-say-section" data-searchable>
+                        <h2>What They Say?</h2>
+                        <div class="review-container">
+                            <div class="review active">
+                                <div class="client-image">
+                                    <img src="assets/jan hart.jpg" alt="Client 1">
+                                </div>
+                                <div class="review-content" data-searchable>
+                                    <p>
+                                        "I liked that Mehedi worked with me so easily and patiently. I am new at this
+                                        and he made things really easy. He was always willing and eager to help. He
+                                        worked quickly but efficiently. He was also a great communicator. I very much am
+                                        pleased with his work."
+                                    </p>
+                                    <div class="client-details">
+                                        <h4>Jan Hart</h4>
+                                        <p>California, USA</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="review">
+                                <div class="client-image">
+                                    <img src="assets/saadi.webp" alt="Client 2">
+                                </div>
+                                <div class="review-content" data-searchable>
+                                    <p>
+                                        "He is kind and eager to ensure he does his best to get your project done like
+                                        you want. He is easy to work with, talented, and extremely patient. He is very
+                                        good and pays attention. I would highly recommend him."
+                                    </p>
+                                    <div class="client-details">
+                                        <h4>Shadi Alghnam</h4>
+                                        <p>New Jersey, US</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="review">
+                                <div class="client-image">
+                                    <img src="assetsclient3.jpeg" alt="Client 3">
+                                </div>
+                                <div class="review-content" data-searchable>
+                                    <p>
+                                        "Mehedi caught a lot of little things we didn't discuss and added functionality
+                                        to accommodate. I am very happy with the functionality and would highly
+                                        recommend Rahul. This was a more complex project than usual and he was creative
+                                        in solving the issues I needed to be solved. I would highly recommend Mehedi."
+                                    </p>
+                                    <div class="client-details">
+                                        <h4>Michael Johnson</h4>
+                                        <p>Sydney, Australia</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Navigation Buttons -->
+                        <div class="navigation-buttons">
+                            <button class="prev-btn" onclick="prevReview()"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-btn" onclick="nextReview()"><i
+                                    class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <!-- Love to Section -->
+                    <div class="love-to-section" data-searchable>
+                        <h2>Love to Play</h2>
+
+                        <div class="love-to-item">
+                            <div class="game-info">
+                                <div class="game-header">
+                                    <i class="fas fa-volleyball-ball"></i>
+                                    <h3>Volleyball</h3>
+                                </div>
+                                <p>
+                                    Volleyball is a team sport that I love for its fast-paced action and teamwork. It
+                                    helps me stay active and build strong bonds with my teammates.
+                                </p>
+                            </div>
+                            <div class="game-photo">
+                                <img src="assets/volleyball.jpg" alt="Volleyball" data-searchable>
+                            </div>
+                        </div>
+
+                        <div class="love-to-item">
+                            <div class="game-info">
+                                <div class="game-header">
+                                    <i class="fas fa-table-tennis"></i>
+                                    <h3>Badminton</h3>
+                                </div>
+                                <p>
+                                    Badminton is a sport I enjoy for its agility and precision. It's a great way to
+                                    improve reflexes and stay fit while having fun.
+                                </p>
+                            </div>
+                            <div class="game-photo">
+                                <img src="assets/badminton.jpeg" alt="Badminton" data-searchable>
+                            </div>
+                        </div>
+
+                        <div class="love-to-item">
+                            <div class="game-info">
+                                <div class="game-header">
+                                    <i class="fas fa-baseball-ball"></i>
+                                    <h3>Cricket</h3>
+                                </div>
+                                <p>
+                                    Cricket is a sport I love for its strategic depth and excitement. It teaches
+                                    patience, teamwork, and the thrill of competition.
+                                </p>
+                            </div>
+                            <div class="game-photo">
+                                <img src="assets/cricket.jpeg" alt="Cricket" data-searchable>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <!-- Love to Eat Section -->
+                    <div class="love-to-eat-section" data-searchable>
+                        <h2>Love to Eat</h2>
+                        <div class="food-card-grid">
+
+                            <div class="food-card">
+                                <div class="food-image">
+                                    <img src="assets/pizza.jpeg" alt="Pizza" data-searchable>
+                                </div>
+                                <h3>Pizza</h3>
+                                <p>A delicious Italian dish made with a thin crust, tomato sauce, cheese, and various
+                                    toppings.</p>
+                            </div>
+
+                            <div class="food-card">
+                                <div class="food-image">
+                                    <img src="assets/biriyani.jpeg" alt="Sushi" data-searchable>
+                                </div>
+                                <h3>Biriyani</h3>
+                                <p>Biriyani is a fragrant, flavorful dish made with spiced rice, tender meat (or
+                                    vegetables), and aromatic spices like cardamom and saffron.</p>
+                            </div>
+
+                            <div class="food-card">
+                                <div class="food-image">
+                                    <img src="assets/burger.jpeg" alt="Burger" data-searchable>
+                                </div>
+                                <h3>Burger</h3>
+                                <p>A classic American dish with a juicy patty, cheese, lettuce, tomato, and sauce,
+                                    served in a bun.</p>
+                            </div>
+
+                            <div class="food-card">
+                                <div class="food-image">
+                                    <img src="assets/noodles.jpeg" alt="Pasta" data-searchable>
+                                </div>
+                                <h3>Noodles</h3>
+                                <p>Noodles are a versatile and beloved dish, enjoyed worldwide in countless variations,
+                                    from comforting soups to stir-fries, offering a quick, delicious, and satisfying
+                                    meal.</p>
+                            </div>
+
+                            <div class="food-card">
+                                <div class="food-image">
+                                    <img src="assets/kalavuna.jpeg" alt="Kalavuna" data-searchable>
+                                </div>
+                                <h3>Beef Kalavuna</h3>
+                                <p>Beef Kalavuna is a rich, spicy, and savory dish featuring tender beef cooked with
+                                    bold flavors, often enjoyed as a hearty meal in Bangladeshi cuisine.</p>
+                            </div>
+
+                            <div class="food-card">
+                                <div class="food-image">
+                                    <img src="assets/ice-cream.jpeg" alt="Ice Cream" data-searchable>
+                                </div>
+                                <h3>Ice Cream</h3>
+                                <p>A sweet frozen dessert made from dairy products, sugar, and flavorings, perfect for
+                                    any occasion.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2025 Mhs. All Rights Reserved.</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+            document.getElementById("overlay").classList.toggle("active");
+        }
+        function toggleLeftSidebar() {
+            document.getElementById("left-sidebar").classList.toggle("active");
+            document.getElementById("left-overlay").classList.toggle("active");
+        }
+
+
+
+
+        let currentReviewIndex = 0;
+        const reviews = document.querySelectorAll(".review");
+
+        function showReview(index) {
+            // Hide all reviews
+            reviews.forEach((review) => review.classList.remove("active"));
+            // Show the current review
+            reviews[index].classList.add("active");
+        }
+
+        function nextReview() {
+            currentReviewIndex = (currentReviewIndex + 1) % reviews.length; // Loop to the first review after the last
+            showReview(currentReviewIndex);
+        }
+
+        function prevReview() {
+            currentReviewIndex = (currentReviewIndex - 1 + reviews.length) % reviews.length; // Loop to the last review before the first
+            showReview(currentReviewIndex);
+        }
+
+        // Show the first review initially
+        showReview(currentReviewIndex);
+
+
+        // Global Search Functionality
+        const searchInput = document.getElementById("searchInput");
+        const searchIcon = document.getElementById("searchIcon");
+        const searchForm = document.getElementById("searchForm");
+
+        // Function to perform search
+        function performSearch() {
+            const searchQuery = searchInput.value.trim().toLowerCase(); // Get the search query in lowercase
+
+            // Clear previous highlights
+            const searchableElements = document.querySelectorAll("[data-searchable]");
+            searchableElements.forEach((element) => {
+                element.querySelectorAll(".highlight").forEach((highlight) => {
+                    highlight.outerHTML = highlight.innerHTML; // Remove highlight spans
+                });
+            });
+
+            if (searchQuery === "") return; // Exit if the search query is empty
+
+            // Search for the keyword in all searchable elements
+            let firstMatch = null;
+            searchableElements.forEach((element) => {
+                const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+                let hasMatch = false;
+
+                while (walker.nextNode()) {
+                    const node = walker.currentNode;
+                    const parent = node.parentElement;
+
+                    if (parent.tagName === "SCRIPT" || parent.tagName === "STYLE") continue; // Skip script and style tags
+
+                    const content = node.textContent;
+                    const regex = new RegExp(`(${searchQuery})`, "gi"); // Case-insensitive global search
+
+                    if (regex.test(content)) {
+                        hasMatch = true;
+                        const highlightedContent = content.replace(regex, '<span class="highlight">$1</span>');
+                        const span = document.createElement("span");
+                        span.innerHTML = highlightedContent;
+                        node.replaceWith(span); // Replace text node with highlighted content
+                    }
+                }
+
+                // Scroll to the first match
+                if (!firstMatch && hasMatch) {
+                    firstMatch = element;
+                    firstMatch.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        }
+
+        // Trigger search on input
+        searchInput.addEventListener("input", performSearch);
+
+        // Trigger search on icon click
+        searchIcon.addEventListener("click", performSearch);
+
+        // Prevent form submission
+        searchForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+            performSearch(); // Perform the search
+        });
+
+
+        
+
+    </script>
+</body>
+
+</html>

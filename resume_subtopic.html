@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/resume_subtopic.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="image">
+            <div class="mehedi">
+                <img src="assets/me.jpg" alt="">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mhs.sourov2000" target="_blank" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <!-- Twitter Icon -->
+                    <a href="https://x.com/MdMehediHa46917" target="_blank" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <!-- Whatsapp Icon -->
+                    <a href="https://wa.me/+8801774490826" target="_blank" title="Instagram">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/md-mehedi-hasan-508ab8265/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="skill-container">
+                <!-- Graphics Design -->
+                <div class="skill">
+                    <div class="skill-name">Graphics Design</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 80%;"></div>
+                        <div class="skill-percent">80%</div>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="skill">
+                    <div class="skill-name">Web Development</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 90%;"></div>
+                        <div class="skill-percent">90%</div>
+                    </div>
+                </div>
+
+                <!-- MS Office -->
+                <div class="skill">
+                    <div class="skill-name">MS Office</div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="width: 70%;"></div>
+                        <div class="skill-percent">70%</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+                <div class="contact_icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="hire">
+                    <i class="fa-solid fa-briefcase"></i> Hire Me
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index_resume.html">Home</a></li>
+                    <li><a href="resume_subtopic.html">Resume</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="menu" onclick="toggleLeftSidebar()">
+                    <div class="icon">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    Menu
+                </button>
+                <div class="icon" onclick="toggleSidebar()">
+                    <svg class="vertical-dots" viewBox="0 0 24 24" width="24" height="24">
+                        <circle cx="12" cy="4" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="12" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                        <circle cx="12" cy="20" r="2" fill="none" stroke="currentColor" stroke-width="1"></circle>
+                    </svg>
+                </div>
+
+                <!-- Left Sidebar -->
+                <div class="left-sidebar" id="left-sidebar">
+                    <div class="left_sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="left-close-btn" onclick="toggleLeftSidebar()">&times;</span>
+                    </div>
+                    <ul>
+                        <li><a href="index_resume.html">Home</a></li>
+                        <li><a href="resume_subtopic.html">Resume</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Left Overlay -->
+                <div class="left-overlay" id="left-overlay" onclick="toggleLeftSidebar()"></div>
+
+                <!--Right Sidebar -->
+                <div class="sidebar" id="sidebar" data-searchable="">
+                    <div class="sidebar_sign_and_close_btn">
+                        <img src="assets/Mehedi.png" width="80px" alt="">
+                        <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+                    </div>
+                    <!-- Search Bar -->
+                    <div class="search-box">
+                        <form id="searchForm">
+                            <input type="text" id="searchInput" placeholder="Search...">
+                            <i id="searchIcon" class="fa-solid fa-search"></i>
+                        </form>
+                    </div>
+                    Categories
+                    <!-- Sidebar Topics -->
+                    <ul>
+                        <li>Web</li>
+                        <li>Startup</li>
+                        <li>Branding</li>
+                        <li>UI/UX</li>
+                        <li>Agency</li>
+                    </ul>
+                </div>
+                <!-- Overlay -->
+                <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+            </div>
+            <div class="body">
+                <div class="two-column">
+                    <!-- Education Column -->
+                    <div class="column">
+                        <h2>Education</h2>
+                        <div class="institute active" onclick="toggleDetails(this)">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="assets/ru_logo.png.png" width="20px" height="20px" alt="" srcset="">
+                                <span>
+                                    University of Rajshahi
+                                </span>
+                            </div>
+                            <div class="details">
+                                <img src="assets/admin-building.jpg" alt="University of Rajshahi" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">Passing Year: 2025</div>
+                                    <div class="box">CGPA: 3.8</div>
+                                </div>
+                                <p>Studying at the dept. of Information and Communication Engineering in the B.Sc Engg.
+                                    Program. Session: 2019-20 and 20th batch of ICE.</p>
+                            </div>
+                        </div>
+                        <div class="institute" onclick="toggleDetails(this)">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="assets/rgc.png" width="20px" height="20px" alt="" srcset="">
+                                <span>
+                                    Rangpur Government College (RGC)
+                                </span>
+                            </div>
+                            <div class="details">
+                                <img src="assets/rgc.jpeg" alt="RGC" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">Passing Year: 2019</div>
+                                    <div class="box">GPA: 5.00</div>
+                                </div>
+                                <p>I have completed the intermediate level from this college with a GPA of 5.00 in 2018
+                                </p>
+                            </div>
+                        </div>
+                        <div class="institute" onclick="toggleDetails(this)">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="assets/pbhs.jpg" width="20px" height="20px" style="border-radius: 50%; ">
+                                <span>
+                                    Pateswari Barkatiya M/L High School
+                                </span>
+                            </div>
+                            <div class="details">
+                                <img src="assets/pbhs.jpg" alt="PBHS" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">Passing Year: 2017</div>
+                                    <div class="box">GPA: 5.00</div>
+                                </div>
+                                <p>I have completed my SSC level from this school at our village. The most beautiful
+                                    time of our life is the school life. Really that was a very enjoyable time. There
+                                    I've got many close friend & teachers. It is not forgettable. Still miss that time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="institute" onclick="toggleDetails(this)">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <img src="assets/dpsk_logo.png" width="20px" height="20px" style="border-radius: 50%;" alt="">
+                                <span>
+                                    Dristy Plus Kishaloy Bidda Niketon
+                                </span>
+                            </div>
+                            <div class="details">
+                                <img src="assets/dpsk.jpg" alt="Plus Kishaloy Bidda Niketon" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">Passing Year: 2011</div>
+                                    <div class="box">GPA: 5.00</div>
+                                </div>
+                                <p>I have completed the primary level here. The basis of the future basically formed at
+                                    this stage. Here I have got some of the best teachers in life. Perhaps without their
+                                    helpful & grateful contributions & also their attitudes, I couldn't come to this
+                                    stage. So I am very grateful to them and also miss them a lot.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Column -->
+                    <div class="column">
+                        <h2>Experience</h2>
+                        <div class="company active" onclick="toggleDetails(this)">
+                            <i class="fas fa-briefcase"></i> Company 1
+                            <div class="details">
+                                <img src="assets/company.jpeg" alt="Institute 1" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">2021 - Present</div>
+                                    <div class="box">Developer</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit.</p>
+                            </div>
+                        </div>
+                        <div class="company" onclick="toggleDetails(this)">
+                            <i class="fas fa-briefcase"></i> Company 2
+                            <div class="details">
+                                <img src="assets/company.jpeg" alt="Institute 1" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">2019 - 2021</div>
+                                    <div class="box">Junior Developer</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit.</p>
+                            </div>
+                        </div>
+                        <div class="company" onclick="toggleDetails(this)">
+                            <i class="fas fa-briefcase"></i> Company 3
+                            <div class="details">
+                                <img src="assets/company.jpeg" alt="Institute 1" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">Intern</div>
+                                    <div class="box">2017 - 2019</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit.</p>
+                            </div>
+                        </div>
+                        <div class="company" onclick="toggleDetails(this)">
+                            <i class="fas fa-briefcase"></i> Company 4
+                            <div class="details">
+                                <img src="assets/company.jpeg" alt="Institute 1" class="institute-image">
+                                <div class="info-box">
+                                    <div class="box">2015 - 2017</div>
+                                    <div class="box">Freelancer</div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Download CV Button -->
+                <div class="download-cv">
+                    <button onclick="downloadCV()">Download CV</button>
+                </div>
+
+            </div>
+
+
+            <div class="footer">
+                <p>&copy; 2025 Mhs. All Rights Reserved.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("sidebar").classList.toggle("active");
+            document.getElementById("overlay").classList.toggle("active");
+        }
+        function toggleLeftSidebar() {
+            document.getElementById("left-sidebar").classList.toggle("active");
+            document.getElementById("left-overlay").classList.toggle("active");
+        }
+
+
+
+
+
+
+        // Global Search Functionality
+        const searchInput = document.getElementById("searchInput");
+        const searchIcon = document.getElementById("searchIcon");
+        const searchForm = document.getElementById("searchForm");
+
+        // Function to perform search
+        function performSearch() {
+            const searchQuery = searchInput.value.trim().toLowerCase(); // Get the search query in lowercase
+
+            // Clear previous highlights
+            const searchableElements = document.querySelectorAll("[data-searchable]");
+            searchableElements.forEach((element) => {
+                element.querySelectorAll(".highlight").forEach((highlight) => {
+                    highlight.outerHTML = highlight.innerHTML; // Remove highlight spans
+                });
+            });
+
+            if (searchQuery === "") return; // Exit if the search query is empty
+
+            // Search for the keyword in all searchable elements
+            let firstMatch = null;
+            searchableElements.forEach((element) => {
+                const walker = document.createTreeWalker(element, NodeFilter.SHOW_TEXT, null, false);
+                let hasMatch = false;
+
+                while (walker.nextNode()) {
+                    const node = walker.currentNode;
+                    const parent = node.parentElement;
+
+                    if (parent.tagName === "SCRIPT" || parent.tagName === "STYLE") continue; // Skip script and style tags
+
+                    const content = node.textContent;
+                    const regex = new RegExp(`(${searchQuery})`, "gi"); // Case-insensitive global search
+
+                    if (regex.test(content)) {
+                        hasMatch = true;
+                        const highlightedContent = content.replace(regex, '<span class="highlight">$1</span>');
+                        const span = document.createElement("span");
+                        span.innerHTML = highlightedContent;
+                        node.replaceWith(span); // Replace text node with highlighted content
+                    }
+                }
+
+                // Scroll to the first match
+                if (!firstMatch && hasMatch) {
+                    firstMatch = element;
+                    firstMatch.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        }
+
+        // Trigger search on input
+        searchInput.addEventListener("input", performSearch);
+
+        // Trigger search on icon click
+        searchIcon.addEventListener("click", performSearch);
+
+        // Prevent form submission
+        searchForm.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+            performSearch(); // Perform the search
+        });
+
+
+        function toggleDetails(element) {
+            // Close all other details
+            const allItems = document.querySelectorAll('.institute, .company');
+            allItems.forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('active');
+                }
+            });
+
+            // Toggle the clicked item
+            element.classList.toggle('active');
+        }
+
+        function downloadCV() {
+    // Path to your CV file
+    const cvFilePath = "assetsReview.pdf"; // Update this path
+
+    // Create a temporary anchor element
+    const link = document.createElement("a");
+    link.href = cvFilePath;
+
+    // Set the download attribute with the desired file name
+    link.download = "Mehedi's CV.pdf"; // You can customize the downloaded file name
+
+    // Append the anchor to the body (required for Firefox)
+    document.body.appendChild(link);
+
+    // Trigger the download
+    link.click();
+
+    // Remove the anchor from the document
+    document.body.removeChild(link);
+}
+
+    </script>
+</body>
+
+</html>
